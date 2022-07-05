@@ -54,7 +54,7 @@ class Hyperparamters:
     # ALBERT
     model = 'albert_small_zh_google'
     bert_path = os.path.join(pwd,model)
-    vocab_file = os.path.join(pwd,model,'vocab_chinese.txt')
+    vocab_file = os.path.join(pwd,model,'vocab.txt')
     init_checkpoint = os.path.join(pwd,model,'albert_model.ckpt')
     saved_model_path = os.path.join(pwd,'model')    
     
