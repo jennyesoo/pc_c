@@ -59,7 +59,7 @@ class NetworkAlbertTextCNN(object):
             # Prediction               
             zero = tf.zeros_like(self.probabilities)
             one = tf.ones_like(self.probabilities)
-            self.predictions = tf.where(self.probabilities < 0.5, x=zero, y=one)
+            self.predictions = tf.where(self.probabilities < 0.25, x=zero, y=one)
         with tf.variable_scope("loss"):            
             # Summary for tensorboard
             if self.is_training:
